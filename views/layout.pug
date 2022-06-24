@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/chat.css')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+  body
+    div.main
+      h3
+      ul.nav
+          li.nav-item
+            a.nav-link.aria-current( href="/") Home
+          li.nav-item
+            a.nav-link.aria-current( href="/signup") Sign up
+          li.nav-item
+            a.nav-link.aria-current( href="/creategroup") Create group
+          li.nav-item
+            a.nav-link.aria-current( href="/login") Login
+          li.nav-item
+            a.nav-link.aria-current( href="/logout") Logout
+            
+      .sidenav
+        a( href="/dashboard") Dashbard
+        a( href="#") Notifications 
+        a( href="#") Groups
+        a( href="#") Calender
+        a( href="#") About
+      div
+         block content
